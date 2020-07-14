@@ -1,26 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Post from "./pages/post.jsx";
+
 import "./App.css";
 
-import ReactMarkdown from "react-markdown";
-
 const App = () => {
-  const [markdownText, setMarkdownText] = useState("");
-
-  const importMarkdownFile = async () => {
-    // you can dynamically insert the string
-    const module = await import("./sample-article.md");
-    const response = await fetch(module.default);
-    const text = await response.text();
-    setMarkdownText(text);
-  };
-
-  useEffect(() => {
-    importMarkdownFile();
-  }, []);
-
   return (
     <div className="App">
-      <ReactMarkdown source={markdownText} />
+      <Router>
+        <Route path="/" exact>
+          <div>Home</div>
+        </Route>
+        <Route path="/posts/:slug" exact>
+          <Post />
+        </Route>
+      </Router>
     </div>
   );
 };
