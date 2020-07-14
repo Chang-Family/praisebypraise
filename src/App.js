@@ -1,15 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Post from "./pages/post.jsx";
 
-import "./App.css";
+// import pages
+import Home from "./pages/home";
+import Post from "./pages/post";
 
 const App = () => {
   return (
     <div className="App">
       <Router>
         <Route path="/" exact>
-          <div>Home</div>
+          <Home />
         </Route>
         <Route path="/posts/:slug" exact>
           <Post />
