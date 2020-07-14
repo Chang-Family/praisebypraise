@@ -25,7 +25,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
   const { data, content } = matter(markdownWithMetadata);
   // convert post date to format: Month day, Year
   const options = { year: "numeric", month: "long", day: "numeric" };
-  const formattedDate = data.date.toLocaleDateString("en-US", options);
+  const formattedDate = data?.date?.toLocaleDateString("en-US", options) || "";
   // override the date in the frontmatter
   const frontmatter = {
     ...data,
@@ -44,8 +44,9 @@ export const getStaticProps = async ({ params: { slug } }) => {
 export const getStaticPaths = async () => {
   // get all the files that might ever have to be rendered by this route
   const files = fs.readdirSync("content/posts");
+  const markdownFiles = files.filter((f) => path.extname(f) === ".md");
   // get their paths
-  const paths = files.map((filename) => ({
+  const paths = markdownFiles.map((filename) => ({
     params: {
       slug: filename.replace(".md", ""),
     },
