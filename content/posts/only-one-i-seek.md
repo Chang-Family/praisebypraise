@@ -1,8 +1,10 @@
 ---
 title: You Are the only One I Seek
-description: 祢是我唯一所求
+title_cn: 祢是我唯一所求
 date: 2016-11-26
 ---
+
+![](/content/poppies.jpg)
 
 > Recorded on November 26, 2016
 > 主, 我只尋求祢
