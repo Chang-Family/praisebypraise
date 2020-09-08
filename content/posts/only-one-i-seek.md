@@ -1,0 +1,55 @@
+---
+title: You Are the only One I Seek
+description: 祢是我唯一所求
+date: 2016-11-26
+---
+
+> Recorded on November 26, 2016
+> 主, 我只尋求祢
+> 住在祢殿中
+> 瞻仰祢榮美
+> I only seek You Lord
+> to dwell in You
+> to gaze on Your beauty.
+
+---
+
+祢是我的唯一所求
+詞曲: 張呂佳蓉
+
+有一件事我曾祈求
+有一件事我曾祈求
+有一件事我仍尋求
+有一件事我仍要求
+
+就是一生一世住在耶和華的殿中
+就是一生一世住在祢殿中
+就是一生一世住在耶和華的殿中
+就是一生一世住在祢殿中
+
+啊！瞻仰祢的榮美
+
+我心嚮往著祢
+我心愛慕著祢
+我心嚮往著祢
+好愛祢
+
+我心完全被祢佔據
+祢是我的唯一渴慕
+求祢的愛來充滿我
+祢是我的唯一所求
+祢是我的唯一所求
+
+求祢的靈來充滿我
+...
+祢是我的唯一所求
+祢是我的唯一所求
+...
+我心嚮往著祢
+我心愛慕著祢
+我心嚮往著祢
+好愛祢
+
+詩篇 Psalm 27:4
+​One thing I ask from the LORD, this only do I seek: that I may dwell in the house of the LORD all the days of my life, to gaze on the beauty of the LORD and to seek Him in His temple. ;
+有一件事, 我曾求耶和華, 我仍要尋求. 就是一生一世住在耶和華的殿中, 瞻仰祂的榮美, 在祂的殿裏求問.
