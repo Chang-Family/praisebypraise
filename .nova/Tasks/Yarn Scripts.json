@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "yarn dev"
+    }
+  },
+  "identifier" : "3FAB9B74-85E5-476E-BDE6-890D3B9C0A0F",
+  "persistent" : true
+}
