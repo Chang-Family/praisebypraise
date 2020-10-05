@@ -5,11 +5,22 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
 const Post = ({ content, frontmatter }) => {
+  console.log(frontmatter);
   return (
-    <article>
+    <article style={{ padding: "50px" }}>
+      <img
+        src={frontmatter?.featuredImage || "/content/poppies.jpg"}
+        style={{ width: "100%" }}
+      />
+      <h1>{frontmatter?.title}</h1>
+      <p>{frontmatter?.date}</p>
       {/* do something with the frontmatter too, like show the title, date etc */}
       {/* render the content as markdown */}
-      <ReactMarkdown source={content} escapeHtml={false} />
+      <ReactMarkdown
+        source={content}
+        escapeHtml={false}
+        className="react-markdown"
+      />
     </article>
   );
 };

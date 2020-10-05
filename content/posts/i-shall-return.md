@@ -4,6 +4,8 @@ title_cn: 我要歸回
 date: 2016-01-27
 ---
 
+<audio controls src="/content/posts/i-shall-return/i_shall_return.mp3"></audio>
+
 > 回家吧!
 > 神的兒女
 > 都要歸回.

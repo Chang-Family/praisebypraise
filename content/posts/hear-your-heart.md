@@ -2,9 +2,10 @@
 title: Hear Your Heart
 title_cn: 聽祢的心
 date: 2016-11-11
+featuredImage: /content/about/jenny.jpg
 ---
 
-![](/content/poppies.jpg)
+<audio controls src="/content/posts/hear-your-heart/hear_your_heart.mp3"></audio>
 
 > 聽祢的心
 > Hear Your Heart
