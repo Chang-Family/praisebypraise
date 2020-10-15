@@ -1,13 +1,23 @@
 import Head from "next/head";
 import fs from "fs";
-import path from "path";
+import PATH from "path";
 import matter from "gray-matter";
+import Navbar from "../components/Navbar";
 
 const Home = ({ posts }) => {
   return (
-    <div>
+    <div style={{ padding: "50px" }}>
+      <Navbar />
       <h1>Home</h1>
       <h2>List of posts:</h2>
+      <ul>
+        {posts.map((p) => (
+          <li key={p?.slug}>
+            <a href={PATH.join("posts", p?.slug)}>{p?.frontmatter?.title}</a>
+          </li>
+        ))}
+      </ul>
+
       {JSON.stringify(posts)}
     </div>
   );
@@ -16,7 +26,7 @@ const Home = ({ posts }) => {
 export const getStaticProps = async () => {
   // list all the files in the posts directory
   const files = fs.readdirSync(`${process.cwd()}/content/posts`);
-  const markdownFiles = files.filter((f) => path.extname(f) === ".md");
+  const markdownFiles = files.filter((f) => PATH.extname(f) === ".md");
 
   // for each file
   const posts = markdownFiles.map((filename) => {

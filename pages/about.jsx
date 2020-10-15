@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import Navbar from "../components/Navbar";
 
 const About = () => {
   return (
-    <div>
+    <div style={{padding: "50px"}}>
+      <Navbar/>
       <h1>About</h1>
-      <img src="/content/about/jenny.jpg" alt="Jenny cover image" />
+      <img src="/content/about/jenny.jpg" alt="Jenny cover image"  style={{ width: "100%"}}/>
       <h2>Jenny Lu 張呂佳蓉</h2>
       <hr />
       <h2>I have nothing, only a pure heart to love Jesus.</h2>
