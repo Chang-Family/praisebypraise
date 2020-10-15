@@ -16,4 +16,6 @@ code {
 }
 
 .react-markdown p {
+  /* respect soft-breaks inside the markdown */
+  white-space: pre-line;
 }
