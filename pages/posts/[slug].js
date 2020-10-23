@@ -12,13 +12,13 @@ const Post = ({ content, frontmatter }) => {
       <Navbar />
       <br />
       <article>
+        {/* do something with the frontmatter too, like show the title, date etc */}
         <img
           src={frontmatter?.featuredImage || "/content/poppies.jpg"}
           style={{ width: "100%" }}
         />
         <h1>{frontmatter?.title}</h1>
         <p>{frontmatter?.date}</p>
-        {/* do something with the frontmatter too, like show the title, date etc */}
         {/* render the content as markdown */}
         <ReactMarkdown
           source={content}

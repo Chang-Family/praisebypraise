@@ -4,6 +4,9 @@ title_cn: 感謝神
 date: 2016-11-24
 ---
 
+<audio controls src="/content/posts/thank-god/thank-god.mp3"></audio>
+
+
 > 感謝神!
 > 賜我生命
 > 讓我能開口讚美祢
