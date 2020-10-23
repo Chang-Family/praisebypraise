@@ -2,6 +2,9 @@
 title: Thank God
 title_cn: 感謝神
 date: 2016-11-24
+description: "I will give thanks to You, LORD, with all my heart; I will tell of all your wonderful dees.  
+我要一心稱謝耶和華.我要傳揚祢一切奇妙的作為. 
+​詩篇Psalm 9:1"
 ---
 
 <audio controls src="/content/posts/thank-god/thank-god.mp3"></audio>

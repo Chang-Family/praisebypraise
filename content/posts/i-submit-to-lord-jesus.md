@@ -7,7 +7,7 @@ description: "But one thing is needful:  and Mary hath chosen that good part, wh
 Luke 路加福音10:42"
 ---
 
-<audio controls src="/content/posts/holy-holy-holy/holy-holy-holy-choir.mp3"></audio>
+<audio controls src="/content/posts/i-submit-to-lord-jesus/i-submit-to-lord-jesus.mp3"></audio>
 
 >Recorded on December 15, 2015
 >但不可少的只有一件

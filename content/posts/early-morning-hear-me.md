@@ -3,6 +3,8 @@ title: Early In The Morning You Hear Me
 title_cn: ​早早清晨醒來
 date: 2015-12-04
 featuredImage: /content/about/jenny.jpg
+description: "In the morning, O Lord, You hear my voice; Psalm5:3 
+主啊! 早晨祢必聽我的聲音. 詩篇5:3"
 ---
 
 <audio controls src="/content/posts/early-morning-hear-me/early-morning-hear-me.mp3"></audio>

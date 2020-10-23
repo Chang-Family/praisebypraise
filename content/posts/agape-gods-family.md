@@ -2,6 +2,9 @@
 title: Agape God's Family
 title_cn: 愛修園 神的家
 date: 2016-01-16
+description: ". . . God's household, which is the church of the living God, the pillar and foundation of the truth.  
+. . . 神的家, 這家就是永生 神的教會, 真理的柱石和根基. 
+1Timonthy 提摩太前書 3:15"
 ---
 
 <audio controls src="/content/posts/agape-gods-family/agape-gods-family.mp3"></audio>
