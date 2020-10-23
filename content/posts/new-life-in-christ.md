@@ -2,9 +2,9 @@
 title: New Life in Christ
 title_cn: 在基督裏新生命
 date: 2015-12-31
-description: 若有人在基督裏, 他就是新造的人. 舊事已過, 都變成新的了.  
+description: "若有人在基督裏, 他就是新造的人. 舊事已過, 都變成新的了.  
 Therefore, if anyone is in Christ, he is a new creation;  the old has gone, the new has come!
-哥林多後書 2Corinthians 5:17
+哥林多後書 2Corinthians 5:17"
 ---
 
 <audio controls src="/content/posts/holy-holy-holy/holy-holy-holy-choir.mp3"></audio>

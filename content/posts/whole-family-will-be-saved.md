@@ -2,9 +2,9 @@
 title: My Whole Family Will Be Saved
 title_cn: 全家得救 
 date: 2015-12-30
-description: . . . 當信主耶穌, 你和你一家都必得救.
+description: ". . . 當信主耶穌, 你和你一家都必得救.
 . . . Believe in the Lord Jesus, and you will be saved- you and your household.
-​使徒行傳 Acts 16:31
+​使徒行傳 Acts 16:31"
 ---
 
 <audio controls src="/content/posts/holy-holy-holy/holy-holy-holy-choir.mp3"></audio>

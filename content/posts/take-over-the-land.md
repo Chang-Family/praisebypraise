@@ -2,7 +2,7 @@
 title: Take Over the Land
 title_cn: 得地為業
 date: 2016-01-05
-description: Have I not commanded you?  Be strong and courageous.  Do not be terrified; do not be discouraged, for the Lord your God will be with you wherever you go.  我豈沒有吩咐你麼? 你當剛強壯膽,不要懼怕,也不要驚惶.因為你無論往那裏去,耶和華你的 神必與你同在. 約書亞記 Joshua 1:9
+description: "Have I not commanded you?  Be strong and courageous.  Do not be terrified; do not be discouraged, for the Lord your God will be with you wherever you go.  我豈沒有吩咐你麼? 你當剛強壯膽,不要懼怕,也不要驚惶.因為你無論往那裏去,耶和華你的 神必與你同在. 約書亞記 Joshua 1:9"
 ---
 
 <audio controls src="/content/posts/holy-holy-holy/holy-holy-holy-choir.mp3"></audio>
