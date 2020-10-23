@@ -4,7 +4,7 @@ title_cn: 惟獨耶穌
 date: 2016-11-11
 ---
 
-<audio controls src="/content/posts/hear-your-heart/hear_your_heart.mp3"></audio>
+<audio controls src="/content/posts/only-jesus/only-jesus.mp3"></audio>
 
 Only Jesus
 惟獨耶穌
