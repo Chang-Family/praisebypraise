@@ -4,7 +4,7 @@ title_cn: 愛修園 神的家
 date: 2016-11-11
 ---
 
-<audio controls src="/content/posts/holy-holy-holy/holy-holy-holy-choir.mp3"></audio>
+<audio controls src="/content/posts/agape-gods-family/agape-gods-family.mp3"></audio>
 
 Agape God's Family
 愛修園 神的家

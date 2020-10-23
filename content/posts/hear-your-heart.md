@@ -5,7 +5,19 @@ date: 2016-11-11
 featuredImage: /content/about/jenny.jpg
 ---
 
-<audio controls src="/content/posts/hear-your-heart/hear_your_heart.mp3"></audio>
+<audio controls src="/content/posts/hear-your-heart/hear-your-heart.mp3"></audio>
+
+>Hear Your Heart
+聽祢的心
+詞曲: 張呂佳蓉
+
+​ 我願意就近祢
+來貼近祢的胸膛
+來傾聽祢的心跳
+來聽祢的心意
+體會祢的心情
+來感受祢的真情
+
 
 > 聽祢的心
 > Hear Your Heart

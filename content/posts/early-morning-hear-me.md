@@ -5,7 +5,7 @@ date: 2015-12-04
 featuredImage: /content/about/jenny.jpg
 ---
 
-<audio controls src="/content/posts/early-morning-hear-me/song.mp3"></audio>
+<audio controls src="/content/posts/early-morning-hear-me/early-morning-hear-me.mp3"></audio>
 
 Recorded December 4, 2015  
 早早清晨醒來  

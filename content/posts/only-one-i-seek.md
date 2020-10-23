@@ -4,7 +4,7 @@ title_cn: 祢是我唯一所求
 date: 2016-11-26
 ---
 
-<audio controls src="/content/posts/only-one-i-seek/only_one_i_seek.mp3"></audio>
+<audio controls src="/content/posts/only-one-i-seek/only-one-i-seek.mp3"></audio>
 
 > Recorded on November 26, 2016
 > 主, 我只尋求祢
