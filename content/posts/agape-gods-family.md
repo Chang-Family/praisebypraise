@@ -1,10 +1,18 @@
 ---
 title: Agape God's Family
 title_cn: 愛修園 神的家
-date: 2016-11-11
+date: 2016-01-16
 ---
 
 <audio controls src="/content/posts/holy-holy-holy/holy-holy-holy-choir.mp3"></audio>
+
+>Recorded on January 16, 2016
+>在神家中
+>有神完全的愛
+>我們彼此相愛
+>In God's family,
+>we have God's perfect love,
+>and we love one another. 
 
 Agape God's Family
 愛修園 神的家

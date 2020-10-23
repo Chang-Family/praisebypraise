@@ -1,10 +1,24 @@
 ---
 title: Lord I Follow You
 title_cn: ​主我跟隨祢
-date: 2016-11-11
+date: 2016-01-16
+description: 若有人在基督裏, 他就是新造的人. 舊事已過, 都變成新的了.  
+Therefore, if anyone is in Christ, he is a new creation;  the old has gone, the new has come!
+哥林多後書 2Corinthians 5:17
 ---
 
 <audio controls src="/content/posts/lord-i-follow-you/lord-i-follow-you.mp3"></audio>
+
+
+>主我跟隨祢
+>Lord I Follow You
+>Recorded on January 9, 2016
+>主啊!
+>吸引我,
+>我們就快跑跟隨祢.
+>O Lord!
+>Draw me,
+>we will run after thee.   
 
 Lord I Follow You
 ​主我跟隨祢
