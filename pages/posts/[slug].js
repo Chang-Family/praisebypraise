@@ -2,7 +2,8 @@ import React from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdownWithHtml from "react-markdown/with-html";
+import gfmPlugin from "remark-gfm";
 import Navbar from "../../components/Navbar";
 
 const Post = ({ content, frontmatter }) => {
@@ -20,9 +21,10 @@ const Post = ({ content, frontmatter }) => {
         <h1>{frontmatter?.title}</h1>
         <p>{frontmatter?.date}</p>
         {/* render the content as markdown */}
-        <ReactMarkdown
-          source={content}
-          escapeHtml={false}
+        <ReactMarkdownWithHtml
+          allowDangerousHtml={true}
+          plugins={[gfmPlugin]}
+          children={content}
           className="react-markdown"
         />
       </article>
