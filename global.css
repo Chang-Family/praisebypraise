@@ -29,3 +29,7 @@ code {
   /* respect soft-breaks inside the markdown */
   white-space: pre-line;
 }
+
+.red {
+  color: red;
+}
