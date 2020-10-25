@@ -1,0 +1,31 @@
+---
+title: I Earnestly Seek You
+title_cn: 我切切尋求祢
+---
+
+I Earnestly Seek You
+我切切尋求祢
+詞曲: 張呂佳蓉
+
+神啊！我的神！
+我要切切尋求祢
+在乾旱 疲乏 無水之地
+我的心 我的身 都渴想祢
+神啊！我的神！
+我要切切尋求祢
+在乾旱 疲乏 無水之地
+我的心 我的身 都切慕祢
+祢知道我渴想祢
+祢知道我切慕祢
+澆灌我乾渴的心
+堅固我疲乏的心 
+好讓我來跟隨祢
+好讓我來跟隨祢
+我只要緊緊跟隨
+我只要緊緊跟隨
+不偏左也不偏右
+我心切切尋求祢
+
+詩篇Psalm 63:1
+神啊! 你是我的神, 我要切切的尋求你; 在乾旱疲乏無水之地, 我渴想你, 我的心切慕你.
+You God, are my God, earnestly I seek you; I thirst for you, my whole being longs for you, in a dry and parched land where there is no water.  
