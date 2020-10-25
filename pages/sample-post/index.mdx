@@ -1,0 +1,36 @@
+<!-- You can import any asset or React component here -->
+
+import Audio from "./sample.mp3";
+import Image from "./sample.jpg";
+import MDXWrapper from "../../components/MDXWrapper";
+
+<!-- Note that this project also supports smart includes, so you can totally do
+this and it works -->
+
+<!-- import MDXWrapper from "components/MDXWrapper" -->
+
+<!-- You can export special variables -->
+<!-- These are accessed in the home page and the wrapper (below) -->
+
+export const meta = {
+  title: "Sample post", // if you leave this blank, the filename is used
+};
+
+<!-- Use of this wrapper is optional, but it provides some nice features -->
+<!-- Children refers to all the content of this page below -->
+
+export default ({ children }) => (
+  <MDXWrapper meta={meta}>{children}</MDXWrapper>
+);
+
+<!-- Start writing Markdown/HTML here -->
+
+# This is an H1 heading
+
+## This is an H2 heading
+
+This is a paragraph
+
+<audio controls src={Audio}></audio>
+
+<img src={Image} />

@@ -11,11 +11,9 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Deploy
 
+The deploy folder is called `out`.
+
 ```bash
 yarn build
 yarn start
 ```
-
-## Markdown blog with Next.js
-
-<https://dev.to/jfelx/how-to-make-a-static-blog-with-next-js-2bd6>

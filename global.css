@@ -22,14 +22,14 @@ code {
     monospace;
 }
 
-.react-markdown h1 {
-}
+/* If you use MDXWrapper component to wrap MDX, there is an .mdx-content class
+you can use to provide global customizations */
 
-.react-markdown p {
+.mdx-content p {
   /* respect soft-breaks inside the markdown */
   white-space: pre-line;
 }
 
-.red {
-  color: red;
+.mdx-content img {
+  width: 100%;
 }

@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div style={{display: "flex", alignItems: "center"}}>
-        <a href="/" style={{marginRight: "20px"}}>Home</a>
-        <a href="/about">About</a>
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <Link href="/">Home</Link>
+      <div style={{ marginRight: "20px" }}></div>
+      <Link href="/about">About</Link>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

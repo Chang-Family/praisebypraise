@@ -1,7 +1,7 @@
 ---
 title: My Grace Is Sufficient For You
 title_cn: 我的恩典夠你用
-description: "祂對我說, 我的恩典夠你用的.因為我的能力,是在人的軟弱上顯得完全.所以我更喜歡誇自己的軟弱,好叫基督的能力覆庇我.But He said to me, "My grace is sufficient for you, for my power is made perfect in weakness.  Therefore I will boast all the more gladly about my weaknesses, so that Christ's power may rest on me.  
+description: "祂對我說, 我的恩典夠你用的.因為我的能力,是在人的軟弱上顯得完全.所以我更喜歡誇自己的軟弱,好叫基督的能力覆庇我.But He said to me, 'My grace is sufficient for you, for my power is made perfect in weakness.  Therefore I will boast all the more gladly about my weaknesses, so that Christ's power may rest on me.  
 哥林多後書 2Corinthians 11:5"
 ---
 
