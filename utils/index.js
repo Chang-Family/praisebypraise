@@ -23,6 +23,8 @@ export const getMdxContent = () => {
         title: PATH.basename(getSlug(p)),
         // override with user-provided meta
         ...(mdxContext(p)?.meta ?? {}),
+        // other stuff
+        MDXDocument: mdxContext(p)?.default,
       },
     };
   });
