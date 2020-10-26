@@ -1,7 +1,7 @@
 ---
 title: Come Lord Jesus
 title_cn: 主願祢快來
-description: "He who testifies to these things says, "Yes, I am coming soon." Amen.  Come, Lord Jesus.  
+description: "He who testifies to these things says, 'Yes, I am coming soon.' Amen.  Come, Lord Jesus.  
 證明這事的説, 是了,我必快來. 阿們. 主耶穌阿, 我願祢來.
 啟示錄Revelation22:20"
 ---

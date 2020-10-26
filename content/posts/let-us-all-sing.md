@@ -1,6 +1,7 @@
 ---
 title: Let Us All Sing
 title_cn: 我們高唱
+description: ""
 ---
 
 <audio controls src="/content/posts/thank-god/thank-god.mp3"></audio>

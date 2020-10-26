@@ -1,0 +1,103 @@
+---
+title: With Faith I Please God
+title_cn: 憑信取悦神 
+date: 2015-12-18
+description: "人非有信, 就不能得 神的喜悅. 因為到 神面前來的人, 必須信有 神, 且信祂賞賜那尋求祂的人.  希伯來書11:6
+But without faith it is impossible to please him: for he that cometh to God must believe that he is, and that he is a rewarder of them that diligently seek him.  Hebrews 11:6"
+---
+
+<audio controls src="/content/posts/holy-holy-holy/holy-holy-holy-choir.mp3"></audio>
+
+>Recorded on December 18, 2015
+>我相信
+>神賞賜
+>真心誠意尋求祂的人
+>I believe
+>God rewards
+>those who earnestly seek Him.  
+
+With Faith I Please God
+憑信取悦神
+詞曲: 張呂佳蓉
+ 
+憑信取悦神
+憑信取悦神
+我來到祢面前
+相信祢是我救主
+尋求祢, 尋求祢
+ 
+憑信尋求祢
+憑信尋求祢
+我來到祢面前
+相信祢是我救主
+需要祢, 需要祢
+ 
+憑信需要祢
+憑信需要祢
+我來到祢面前
+祢聽見我聲音
+我懇求祢
+祢應允我
+哦! 耶穌
+ 
+主祢説
+祈求就給你們
+尋找就尋見
+叩門就給你們開門
+ 
+因為祈求的就得著
+尋找就尋見
+而叩門的就給他開門
+ 
+憑信取悦神
+憑信取悦神
+我相信神賞賜那真心誠意去尋求祂的人
+人非有信, 就不能得 神的喜悅. 因為到 神面前來的人, 必須信有 神, 且信祂賞賜那尋求祂的人.  希伯來書11:6
+ 
+憑信, 是的!  簡單的相信, 就能討神的喜悅.
+ 
+這是我一生當中做過最重大的決定, 而且是最完美的決定:
+ 
+相信耶穌基督.
+ 
+我以為要做最重大的決定之前應該是要先費盡心思, 非常努力去找尋所有資料, 研究再研究, 但是這一個, 我人生最重大的決定, 卻是從我出生有記憶以來最簡單的決定, 毫不用一丁點兒自己的努力, 但是完全完美. 
+ 
+就是簡單相信.
+ 
+開始是簡單相信, 過程中, 依然是簡單相信. 
+ 
+也因為簡單相信所以每一天都充滿了盼望. 
+相信就是知道等待有奇妙的事會發生, 這樣的盼望是每一天從張開眼睛醒來就經歷一個又一個的奇妙,  每一天都是新的.  這麼令人喜悅的簡單相信不僅使得每天活得滿了盼望, 而且還討了神的喜悅. 樂而為之!
+ 
+憑信取悦了神
+ 
+唱憑信取悦神的第一句, With faith I please You, 憑信取悦祢, 我打從內心唱出我發現了取悦神之道. 
+ 
+我記得那天正在讀希伯來書, 第十一章, 整章記述歷代聖徒如何憑信而行的見證, 他們的境遇許多甚至面對極度困苦, 危難的環境, 但是共同點都是-簡單相信.  神量給每一個聖徒的經歷不同, 但是不論是什麼景況, 簡單相信的人, 可以成就神的旨意.  簡單相信, 挪亞居然可以建方舟全家行在洪水之上!  簡單相信, 亞伯拉罕彷彿已死年邁之人, 仍生出子孫如繁星眾多, 如海沙無數! 簡單相信, 摩西帶領以色列人過紅海如行乾地!  簡單相信的人, 可以寡勝眾, 制服敵國行公義, 簡單相信的人, 可以啫住獅子的口, 滅烈火, 脫刀劍, 軟弱變剛強, 勇敢爭戰, 簡單相信的人, 可以奉主耶穌基督的聖名醫病趕鬼, 還有許許多多. . .  總之, 簡單相信的人, 可以, 因為就是一個簡單相信起頭到終了.  讀著讀著, 再去翻閱聖經舊約, 新約, 每一本書內的經節詳細內容, 然後取悦神之道就這樣唱了起來, 憑信取悦神.  
+ 
+你們祈求, 就給你們, 尋找, 就尋見, 叩門, 就給你們開門.
+因為凡祈求的, 就得著, 尋找的就尋見. 叩門的就給他開門. 
+馬太福音8:7-8
+ 
+這是耶穌說的話.  我就是以簡單相信, 來經歷生命中一個又一個, 人本看似不可能的突破, 超越自己舊我的限制, 而且每一天都會有簡單相信的驚喜.
+
+你試過簡單相信嗎？
+當你簡單相信, 奇妙的事就會發生.
+March 13, 2015
+24-year prayer answered (中文翻譯）
+A mom told me that she prayed for her parents in law to become Christian for 24 years. Her father in law just passed away a couple months ago. He received Christ 2 years ago. 
+What is most encouraging to me is that he received Christ 2 years ago, thus the waiting time and praying of 24 years become insignificant. If I knew her 3 years ago and that would be her 23rd year praying for her parents in law. Would she know that the next year, just one more year, he will receive Christ? 
+We Christian live by faith. 
+Hebrews 11:1
+Now faith is confidence in what we hope for and assurance about what we do not see.
+I would like to comfort you if you are still waiting. You are not alone. I am waiting, too. I will be faithful until I see God's will be done.
+I am a Christian wife praying for my husband since 2009. 
+Only believe!
+有一位媽媽告訴我，她為她的公公婆婆能成為基督徒祈禱了24年。她的公公兩個月前安息，兩年前他接受了基督耶穌。
+最鼓勵我的是兩年前他接受了基督，而那等待了24年的祈禱變成微不足道。如果我3年前認識她，那麼就是她第23年為她的公公婆婆祈禱。那時的她會知道隔年，就是再那麼一年，她公公就會接受基督嗎？
+我們基督徒憑信而活。
+信，是對所盼望的事有把握，對看不見的事有確據。
+希伯來書 11:1
+我希望能安慰你，如果你仍然在等待中。你並不孤單。我也在等待。我憑著信直到神的旨意成就。
+我是一個基督徒, 自從2009年開始為丈夫一直不斷祈禱。
+只要相信!
