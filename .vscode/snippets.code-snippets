@@ -1,0 +1,31 @@
+{
+  // Place your praisebypraise workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "Song Template": {
+    "prefix": "song",
+    "body": [
+      "import MDXWrapper from 'components/MDXWrapper';",
+      "import Audio from '${1: ./${TM_DIRECTORY/^.+\\/(.*)$/$1/}.mp3}';",
+      "",
+      "export const meta = {",
+      "\ttitle: '$2'",
+      "\ttitle_cn: '$3'",
+      "\tdescription: '$4'",
+      "\tdate: '${5:2015-${CURRENT_MONTH}-${CURRENT_DATE}'}",
+      "\tlyrics: `$6`",
+      "}",
+      "",
+      "export default ({ children }) => (",
+      "\t<MDXWrapper meta={meta}>{children}</MDXWrapper>",
+      ");",
+      "",
+      "<audio controls src={Audio}></audio>"
+    ],
+    "description": "Scaffold a new post"
+  }
+}
