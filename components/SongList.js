@@ -12,9 +12,12 @@ const GridContainer = styled.div`
 const SongList = () => {
   const mdxContent = getMdxContent();
 
+  // only display posts with audio in their meta tag
+  const songs = mdxContent.filter((c) => c?.meta?.audio);
+
   return (
     <div>
-      {mdxContent.map((p) => {
+      {songs.map((p) => {
         return (
           <>
             <hr />
