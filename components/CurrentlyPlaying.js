@@ -13,18 +13,21 @@ const CurrentlyPlaying = () => {
   const audioRef = useRef();
 
   useEffect(() => {
+    // if playlist is non-empty and isPlaying is set, play the source
     if (playlist.length > 0 && isPlaying) {
       audioRef.current.play();
     }
 
+    // if the play state is toggled off, pause the audio
     if (!isPlaying) {
       audioRef.current.pause();
     }
+
+    // run the effect every time the playlist position changes or the play state is toggled
   }, [playlistPosition, isPlaying]);
 
   const onEnded = () => {
-    // set currently selected song to next in playlist
-    setPlaylistPosition(playlistPosition + 1);
+    playNext();
   };
 
   const playNext = () => {
@@ -57,9 +60,13 @@ const CurrentlyPlaying = () => {
       <p>next songs:</p>
       {playlist.slice(playlistPosition + 1).map((s) => s?.meta?.title)}
       <br />
+
+      {/* go to previous song (don't go if at the end of list ) */}
       <button onClick={playPrevious} disabled={playlistPosition === 0}>
         play previous
       </button>
+
+      {/* go to next song (don't go if at the end of list) */}
       <button
         onClick={playNext}
         disabled={playlistPosition === playlist.length - 1}
