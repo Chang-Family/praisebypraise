@@ -47,7 +47,10 @@ const CurrentlyPlaying = () => {
       <p>Song name: {currSong?.meta?.title}</p>
       <details>
         <summary>Lyrics</summary>
-        <p style={{ whiteSpace: "pre-line" }}>{currSong?.meta?.lyrics_cn}</p>
+        <p
+          style={{ whiteSpace: "pre-line" }}
+          dangerouslySetInnerHTML={{ __html: currSong?.meta?.lyrics_cn }}
+        ></p>
       </details>
       <audio
         controls
