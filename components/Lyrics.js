@@ -2,10 +2,10 @@ import React from "react";
 
 const Lyrics = ({ lyrics }) => {
   return (
-    <div
+    <p
       style={{ whiteSpace: "pre-line" }}
       dangerouslySetInnerHTML={{ __html: lyrics }}
-    ></div>
+    ></p>
   );
 };
 
