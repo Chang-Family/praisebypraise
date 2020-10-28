@@ -15,37 +15,40 @@ const Pline = styled.span`
 
 const Home = () => {
   return (
-    <div style={{ margin: "5%" }}>
-      <Navbar />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <img
-          src={cover}
+    <div className="sidebar-main-test">
+      <div className="sidebar-test">Sidebar</div>
+      <div style={{ margin: "5%" }}>
+        <Navbar />
+        <div
           style={{
-            height: "55vh",
-            width: "90vw",
-            objectFit: "cover",
+            display: "flex",
+            justifyContent: "center",
           }}
-        />
-      </div>
-      <div>
-        <Pgraph>
-          ​<Pline>He put a new song in my mouth,</Pline>
-          <Pline>a hymn of praise to our God. </Pline>
-          <Pline>Many will see and fear </Pline>
-          <Pline>and put their trust in the Lord. </Pline>
-          <Pline>Psalm 40:3</Pline>
-        </Pgraph>
-        <Pgraph>
-          <Pline>祂使我口唱新歌,</Pline> 就是讚美我們 神的話.
-          許多人必看見而懼怕, 並要倚靠耶和華. 詩篇40:3
-        </Pgraph>
+        >
+          <img
+            src={cover}
+            style={{
+              height: "55vh",
+              width: "90vw",
+              objectFit: "cover",
+            }}
+          />
+        </div>
+        <div>
+          <Pgraph>
+            ​<Pline>He put a new song in my mouth,</Pline>
+            <Pline>a hymn of praise to our God. </Pline>
+            <Pline>Many will see and fear </Pline>
+            <Pline>and put their trust in the Lord. </Pline>
+            <Pline>Psalm 40:3</Pline>
+          </Pgraph>
+          <Pgraph>
+            <Pline>祂使我口唱新歌,</Pline> 就是讚美我們 神的話.
+            許多人必看見而懼怕, 並要倚靠耶和華. 詩篇40:3
+          </Pgraph>
 
-        <SongList />
+          <SongList />
+        </div>
       </div>
     </div>
   );

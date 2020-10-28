@@ -48,3 +48,28 @@ you can use to provide global customizations */
 .mdx-content img {
   width: 100%;
 }
+
+.sidebar-test {
+  width: 5px;
+  background-color: red;
+  transition: all 0.1s ease-in-out;
+}
+
+.sidebar-test:hover {
+  width: 100px;
+  transition: all 0.1s ease-in-out;
+}
+
+.sidebar-main-test {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar-main-test {
+    flex-wrap: wrap;
+  }
+
+  .sidebar-test {
+    width: 100%;
+  }
+}
