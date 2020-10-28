@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
+import SongList from "components/SongList";
 
 const Songs = () => {
   return (
@@ -9,6 +10,7 @@ const Songs = () => {
       <h1>2016</h1>
       <h1>2017</h1>
       <h1>2018</h1>
+      <SongList />
     </div>
   );
 };

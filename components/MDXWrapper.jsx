@@ -18,14 +18,17 @@ const MDXWrapper = ({ children, meta }) => {
         {/* header */}
         <Navbar />
         {/* content */}
-        <article
-          className="mdx-content"
-          style={{
-            padding: "50px",
-          }}
-        >
-          {children}
-        </article>
+        <div style={{ padding: "50px" }}>
+          {/* meta */}
+          <h1>{meta?.title}</h1>
+          <p>
+            {isNaN(new Date(meta?.date))
+              ? ""
+              : new Date(meta?.date).toDateString()}
+          </p>
+          {/* content */}
+          <article className="mdx-content">{children}</article>
+        </div>
         {/* footer */}
       </main>
     </>

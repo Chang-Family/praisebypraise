@@ -1,29 +1,21 @@
-// Node dependencies
-import { getMdxContent } from "../utils";
 import Navbar from "../components/Navbar";
-import Lyrics from "components/Lyrics";
 import Playlist from "components/Playlist";
 import flower from "./flower.jpg";
 import cover from "./praisebypraisecover.png";
 import styled from "styled-components";
+import SongList from "components/SongList";
 
 const Pgraph = styled.p`
   display: block;
 `;
+
 const Pline = styled.span`
   display: block;
 `;
 
-const GridContainer = styled.div`
-  display: grid;
-  grid-template-columns: 40% 15% 15% 50%;
-  align-items: center;
-`;
-
 const Home = () => {
-  const mdxContent = getMdxContent();
   return (
-    <>
+    <div style={{ margin: "5%" }}>
       <Navbar />
       <div
         style={{
@@ -40,7 +32,7 @@ const Home = () => {
           }}
         />
       </div>
-      <div style={{ margin: "5%" }}>
+      <div>
         <Pgraph>
           ​<Pline>He put a new song in my mouth,</Pline>
           <Pline>a hymn of praise to our God. </Pline>
@@ -53,27 +45,9 @@ const Home = () => {
           許多人必看見而懼怕, 並要倚靠耶和華. 詩篇40:3
         </Pgraph>
 
-        {mdxContent.map((p) => {
-          return (
-            <>
-              <hr />
-              <GridContainer key={p?.slug}>
-                <h3>{p?.meta?.title}</h3>
-                <details>
-                  <summary>See Lyrics</summary>
-                  <Lyrics lyrics={p.meta.lyrics_cn} />
-                </details>
-                <a href={p?.slug}>See page</a>
-                <audio controls src={p?.meta?.audio} />
-              </GridContainer>
-            </>
-          );
-        })}
-
-        <h2>Playlist</h2>
+        <SongList />
       </div>
-      <Playlist />
-    </>
+    </div>
   );
 };
 

@@ -17,6 +17,7 @@
       "\ttitle_cn: '$3'",
       "\tdescription: '$4'",
       "\tdate: '${5:2015-${CURRENT_MONTH}-${CURRENT_DATE}'}",
+      "\taudio: Audio",
       "\tlyrics: `$6`",
       "}",
       "",
