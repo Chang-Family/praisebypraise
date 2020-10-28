@@ -4,50 +4,68 @@ import useGlobalState from "hooks/useGlobalState";
 const CurrentlyPlaying = () => {
   const {
     isPlaying,
-    currentlyPlayingSong,
-    nextSongs,
-    setNextSongs,
-    setCurrentlyPlayingSong,
+    playlist,
+    setPlaylist,
+    playlistPosition,
+    setPlaylistPosition,
   } = useGlobalState();
 
   const audioRef = useRef();
 
   useEffect(() => {
-    if (currentlyPlayingSong && isPlaying) {
+    if (playlist.length > 0 && isPlaying) {
       audioRef.current.play();
     }
 
     if (!isPlaying) {
       audioRef.current.pause();
     }
-  }, [currentlyPlayingSong, isPlaying]);
+  }, [playlistPosition, isPlaying]);
 
   const onEnded = () => {
-    // set currently selected song to next in queue
-    const upNextSong = nextSongs.shift();
-    setCurrentlyPlayingSong(upNextSong);
-    setNextSongs(nextSongs);
+    // set currently selected song to next in playlist
+    setPlaylistPosition(playlistPosition + 1);
   };
+
+  const playNext = () => {
+    setPlaylistPosition(playlistPosition + 1);
+  };
+
+  const playPrevious = () => {
+    setPlaylistPosition(playlistPosition - 1);
+  };
+
+  const currSong = playlist?.[playlistPosition];
 
   return (
     <div style={{ padding: 20, backgroundColor: "#DCDDDE", borderRadius: 5 }}>
       <p>Currently playing</p>
       <p>is playing: {isPlaying ? "true" : "false"}</p>
-      <p>Song name: {currentlyPlayingSong?.meta?.title}</p>
+      <p>Song name: {currSong?.meta?.title}</p>
       <details>
         <summary>Lyrics</summary>
-        <p style={{ whiteSpace: "pre-line" }}>
-          {currentlyPlayingSong?.meta?.lyrics_cn}
-        </p>
+        <p style={{ whiteSpace: "pre-line" }}>{currSong?.meta?.lyrics_cn}</p>
       </details>
       <audio
         controls
-        src={currentlyPlayingSong?.meta?.audio}
+        src={currSong?.meta?.audio}
         ref={audioRef}
         onEnded={onEnded}
       />
-      <p>Up next songs:</p>
-      {nextSongs.map((s) => s?.meta?.title)}
+      <p>Prev songs:</p>
+      {playlist.slice(0, playlistPosition).map((s) => s?.meta?.title)}
+      <p>next songs:</p>
+      {playlist.slice(playlistPosition + 1).map((s) => s?.meta?.title)}
+      <br />
+      <button onClick={playPrevious} disabled={playlistPosition === 0}>
+        play previous
+      </button>
+      <button
+        onClick={playNext}
+        disabled={playlistPosition === playlist.length - 1}
+      >
+        play next
+      </button>
     </div>
   );
 };

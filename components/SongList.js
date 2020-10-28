@@ -14,25 +14,20 @@ const SongList = () => {
   const mdxContent = getMdxContent();
   const {
     isPlaying,
+    playlist: globalPlaylist,
+    playlistPosition: globalPlaylistPosition,
     setIsPlaying,
-    setCurrentlyPlayingSong,
-    currentlyPlayingSong,
-    setNextSongs,
+    setPlaylist,
+    setPlaylistPosition,
   } = useGlobalState();
 
   // only display posts with audio in their meta tag
   const songs = mdxContent.filter((c) => c?.meta?.audio);
 
-  const onAudioEnded = () => {
-    console.log("ended!!!");
-  };
-
-  const playSong = (event, song, nextSongs) => {
-    console.log("play song", song);
+  const playSong = (event, playlist, playlistPosition) => {
+    setPlaylist(playlist);
+    setPlaylistPosition(playlistPosition);
     setIsPlaying(true);
-    setCurrentlyPlayingSong(song);
-    // set everything after it in the queue
-    setNextSongs(nextSongs);
   };
 
   const pauseSong = (event) => {
@@ -40,9 +35,13 @@ const SongList = () => {
     setIsPlaying(false);
   };
 
-  const PlayPauseButton = ({ song, nextSongs }) => {
+  const PlayPauseButton = ({ playlist, playlistPosition }) => {
+    const currSong = playlist[playlistPosition];
     // if song in list is same as globally playing song, it can be in two states
-    if (song?.meta?.audio === currentlyPlayingSong?.meta?.audio) {
+    if (
+      currSong?.meta?.audio ===
+      globalPlaylist?.[globalPlaylistPosition]?.meta?.audio
+    ) {
       // either it's playing, in which case we need a button to pause it
       if (isPlaying) {
         return (
@@ -54,7 +53,7 @@ const SongList = () => {
       // or it's paused, in which case we need to play it
       return (
         <button
-          onClick={(e) => playSong(e, song, nextSongs)}
+          onClick={(e) => playSong(e, playlist, playlistPosition)}
           style={{ width: "80px" }}
         >
           Play
@@ -64,7 +63,7 @@ const SongList = () => {
     // play song if not current song
     return (
       <button
-        onClick={(e) => playSong(e, song, nextSongs)}
+        onClick={(e) => playSong(e, playlist, playlistPosition)}
         style={{ width: "80px" }}
       >
         Play
@@ -76,7 +75,7 @@ const SongList = () => {
     <div>
       {songs.map((p, i) => {
         return (
-          <>
+          <div key={i}>
             <hr />
             <GridContainer key={p?.slug}>
               <h3>{p?.meta?.title}</h3>
@@ -85,10 +84,10 @@ const SongList = () => {
                 <Lyrics lyrics={p.meta.lyrics_cn} />
               </details>
               <a href={p?.slug}>See page</a>
-              <PlayPauseButton song={p} nextSongs={songs.slice(i + 1)} />
+              <PlayPauseButton playlist={songs} playlistPosition={i} />
               {/* <audio controls src={p?.meta?.audio} onEnded={onAudioEnded} /> */}
             </GridContainer>
-          </>
+          </div>
         );
       })}
     </div>

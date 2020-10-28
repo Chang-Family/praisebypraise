@@ -1,32 +1,32 @@
 import React, { useState, useContext, createContext } from "react";
 
 const GlobalState = createContext({
-  currentlyPlayingSong: {},
-  setCurrentlyPlayingSong: () => {},
+  playlist: [],
+  setPlaylist: () => {},
 
-  nextSongs: [],
-  setNextSongs: () => {},
+  playlistPosition: 0,
+  setPlaylistPosition: () => {},
 
   isPlaying: false,
   setIsPlaying: () => {},
 });
 
 export const GlobalStateProvider = ({ children }) => {
-  const [currentlyPlayingSong, setCurrentlyPlayingSong] = useState({});
-  const [nextSongs, setNextSongs] = useState([]);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [playlist, setPlaylist] = useState([]);
+  const [playlistPosition, setPlaylistPosition] = useState(0);
 
   return (
     <GlobalState.Provider
       value={{
-        currentlyPlayingSong,
-        setCurrentlyPlayingSong,
-
-        nextSongs,
-        setNextSongs,
-
         isPlaying,
         setIsPlaying,
+
+        playlist,
+        setPlaylist,
+
+        playlistPosition,
+        setPlaylistPosition,
       }}
     >
       {children}
