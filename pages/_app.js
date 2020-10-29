@@ -6,10 +6,10 @@ import CurrentlyPlaying from "components/CurrentlyPlaying";
 const MyApp = ({ Component, pageProps }) => {
   return (
     <GlobalStateProvider>
-      {/* <div> */}
-      {/* <CurrentlyPlaying /> */}
-      <Component {...pageProps} />
-      {/* </div> */}
+      <div>
+        <CurrentlyPlaying />
+        <Component {...pageProps} />
+      </div>
     </GlobalStateProvider>
   );
 };
