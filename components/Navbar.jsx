@@ -35,8 +35,8 @@ const Navbar = () => {
           <Text>WORD</Text>
         </Link>
         <div style={{ marginRight: "10%" }}></div>
-        <Link href="/family">
-          <Text>FAMILY</Text>
+        <Link href="/video">
+          <Text>VIDEO</Text>
         </Link>
         <div style={{ marginRight: "10%" }}></div>
         <Link href="/about">

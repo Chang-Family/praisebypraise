@@ -41,10 +41,9 @@ const CurrentlyPlaying = () => {
   const currSong = playlist?.[playlistPosition];
 
   return (
-    <div style={{ padding: 20, backgroundColor: "#DCDDDE", borderRadius: 5 }}>
-      <p>Currently playing</p>
-      <p>is playing: {isPlaying ? "true" : "false"}</p>
-      <p>Song name: {currSong?.meta?.title}</p>
+    <div style={{ height: "100%" }}>
+      <p>{isPlaying ? "Currently Playing" : "No Song Added"}</p>
+      <p>{currSong?.meta?.title}</p>
       <details>
         <summary>Lyrics</summary>
         <p
@@ -52,12 +51,15 @@ const CurrentlyPlaying = () => {
           dangerouslySetInnerHTML={{ __html: currSong?.meta?.lyrics_cn }}
         ></p>
       </details>
+
       <audio
+        style={{ visibility: "hidden" }}
         controls
         src={currSong?.meta?.audio}
         ref={audioRef}
         onEnded={onEnded}
       />
+
       <p>Prev songs:</p>
       {playlist.slice(0, playlistPosition).map((s) => s?.meta?.title)}
       <p>next songs:</p>
