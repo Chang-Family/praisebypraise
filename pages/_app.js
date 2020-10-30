@@ -2,14 +2,14 @@ import "../global.css";
 import "normalize.css";
 import { GlobalStateProvider } from "hooks/useGlobalState";
 import Sidebar from "components/Sidebar";
-import CurrentlyPlaying from "components/CurrentlyPlaying";
+import NowPlaying from "components/NowPlaying";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
     <GlobalStateProvider>
       <div style={{ display: "flex", height: "100%" }}>
         <Sidebar>
-          <CurrentlyPlaying />
+          <NowPlaying />
         </Sidebar>
         <div style={{ height: "100%", width: "100%" }}>
           <Component {...pageProps} />

@@ -8,7 +8,7 @@ import SkipBackIcon from "assets/icons/skip-back.svg";
 const convertSecondsToFormattedTime = (seconds) =>
   new Date(seconds * 1000).toISOString().substr(14, 5);
 
-const CurrentlyPlaying = () => {
+const NowPlaying = () => {
   const {
     isPlaying,
     playlist,
@@ -145,4 +145,4 @@ const CurrentlyPlaying = () => {
   );
 };
 
-export default CurrentlyPlaying;
+export default NowPlaying;

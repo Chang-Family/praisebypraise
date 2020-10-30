@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 
 import SongList from "components/SongList";
-import CurrentlyPlaying from "components/CurrentlyPlaying";
+import NowPlaying from "components/NowPlaying";
 
 const Songs = () => {
   return (
@@ -12,7 +12,7 @@ const Songs = () => {
       <h1>2016</h1>
       <h1>2017</h1>
       <h1>2018</h1>
-      <CurrentlyPlaying />
+      <NowPlaying />
       <SongList />
     </div>
   );
