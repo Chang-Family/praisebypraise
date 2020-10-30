@@ -104,6 +104,10 @@ you can use to provide global customizations */
   justify-content: space-around;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .width-animate {
   transition: width, max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }

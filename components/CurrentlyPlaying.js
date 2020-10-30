@@ -1,6 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import useGlobalState from "hooks/useGlobalState";
 
+import PlayIcon from "assets/icons/play.svg";
+import SkipForwardIcon from "assets/icons/skip-forward.svg";
+import SkipBackIcon from "assets/icons/skip-back.svg";
+
 const CurrentlyPlaying = () => {
   const {
     isPlaying,
@@ -41,7 +45,44 @@ const CurrentlyPlaying = () => {
   const currSong = playlist?.[playlistPosition];
 
   return (
-    <div style={{ height: "100%", border: "1px solid black" }}>
+    <div
+      style={{
+        height: "100%",
+      }}
+    >
+      {/* play button */}
+      <div
+        style={{
+          backgroundColor: "#BD645A",
+          padding: "20px",
+        }}
+        className="flex justify-center"
+      >
+        <img src={PlayIcon} width="24" />
+      </div>
+      {/* next and prev buttons */}
+      <div className="flex justify-between">
+        <div
+          style={{
+            padding: "10px",
+            width: "100%",
+            backgroundColor: "#BDC692",
+            borderRight: "1px solid gray",
+          }}
+        >
+          <img src={SkipBackIcon} width="24" />
+        </div>
+        <div
+          style={{
+            padding: "10px",
+            width: "100%",
+            backgroundColor: "#BDC692",
+          }}
+        >
+          <img src={SkipForwardIcon} width="24" />
+        </div>
+      </div>
+
       <p>{isPlaying ? "Currently Playing" : "No Song Added"}</p>
       <p>{currSong?.meta?.title}</p>
       <details>

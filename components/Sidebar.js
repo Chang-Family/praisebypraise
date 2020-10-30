@@ -16,12 +16,13 @@ const Sidebar = ({ children }) => {
       onMouseLeave={(e) => adjustWidth(MIN_WIDTH)}
       className="width-animate"
       style={{
-        backgroundColor: "red",
         height: "100vh",
         width: "100%",
         maxWidth: `${width}px`,
         position: "sticky",
         top: "0",
+        backgroundColor: "#E5C69F",
+        overflow: "hidden",
       }}
     >
       {width === MAX_WIDTH ? children : null}
