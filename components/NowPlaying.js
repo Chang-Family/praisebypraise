@@ -4,9 +4,21 @@ import useGlobalState from "hooks/useGlobalState";
 import PlayIcon from "assets/icons/play.svg";
 import SkipForwardIcon from "assets/icons/skip-forward.svg";
 import SkipBackIcon from "assets/icons/skip-back.svg";
+import styled from "styled-components";
 
 const convertSecondsToFormattedTime = (seconds) =>
   new Date(seconds * 1000).toISOString().substr(14, 5);
+
+const ControlButton = styled.div`
+  /* center contents */
+  display: flex;
+  justify-content: center;
+  /* give some breathing room */
+  padding: ${(props) => props.padding ?? "10px"};
+  width: 100%;
+  /* color */
+  background-color: ${(props) => props.backgroundColor};
+`;
 
 const NowPlaying = () => {
   const {
@@ -65,38 +77,17 @@ const NowPlaying = () => {
       }}
     >
       {/* play button */}
-      <div
-        style={{
-          backgroundColor: "#BD645A",
-          padding: "20px",
-        }}
-        className="flex justify-center"
-      >
+      <ControlButton backgroundColor="#BD645A" padding="20px">
         <img src={PlayIcon} width="24" />
-      </div>
+      </ControlButton>
       {/* next and prev buttons */}
       <div className="flex justify-between">
-        <div
-          className="flex justify-center"
-          style={{
-            padding: "10px",
-            width: "100%",
-            backgroundColor: "#BDC692",
-            borderRight: "1px solid gray",
-          }}
-        >
+        <ControlButton backgroundColor="#BDC692">
           <img src={SkipBackIcon} width="24" />
-        </div>
-        <div
-          className="flex justify-center"
-          style={{
-            padding: "10px",
-            width: "100%",
-            backgroundColor: "#BDC692",
-          }}
-        >
+        </ControlButton>
+        <ControlButton backgroundColor="#BDC692">
           <img src={SkipForwardIcon} width="24" />
-        </div>
+        </ControlButton>
       </div>
       {/* time and duration */}
       <p>
