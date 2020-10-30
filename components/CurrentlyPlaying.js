@@ -41,7 +41,7 @@ const CurrentlyPlaying = () => {
   const currSong = playlist?.[playlistPosition];
 
   return (
-    <div style={{ height: "100%" }}>
+    <div style={{ height: "100%", border: "1px solid black" }}>
       <p>{isPlaying ? "Currently Playing" : "No Song Added"}</p>
       <p>{currSong?.meta?.title}</p>
       <details>

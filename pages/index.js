@@ -33,7 +33,7 @@ const Home = () => {
           src={cover}
           style={{
             height: "55vh",
-            width: "90vw",
+            width: "100%",
             objectFit: "cover",
           }}
         />
