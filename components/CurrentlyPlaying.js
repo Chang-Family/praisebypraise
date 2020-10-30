@@ -38,7 +38,7 @@ const CurrentlyPlaying = () => {
 
   useEffect(() => {
     setDuration(audioRef.current.duration);
-  }, [playlistPosition]);
+  }, [audioRef?.current?.duration]);
 
   const onEnded = () => {
     playNext();
