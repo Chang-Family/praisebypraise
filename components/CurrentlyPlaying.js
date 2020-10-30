@@ -63,6 +63,7 @@ const CurrentlyPlaying = () => {
       {/* next and prev buttons */}
       <div className="flex justify-between">
         <div
+          className="flex justify-center"
           style={{
             padding: "10px",
             width: "100%",
@@ -73,6 +74,7 @@ const CurrentlyPlaying = () => {
           <img src={SkipBackIcon} width="24" />
         </div>
         <div
+          className="flex justify-center"
           style={{
             padding: "10px",
             width: "100%",
