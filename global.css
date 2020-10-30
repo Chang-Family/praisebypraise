@@ -81,3 +81,25 @@ you can use to provide global customizations */
     width: 100%;
   }
 }
+
+/* UTILITY CLASSES */
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
