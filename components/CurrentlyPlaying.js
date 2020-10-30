@@ -1,9 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import useGlobalState from "hooks/useGlobalState";
 
 import PlayIcon from "assets/icons/play.svg";
 import SkipForwardIcon from "assets/icons/skip-forward.svg";
 import SkipBackIcon from "assets/icons/skip-back.svg";
+
+const convertSecondsToFormattedTime = (seconds) =>
+  new Date(seconds * 1000).toISOString().substr(14, 5);
 
 const CurrentlyPlaying = () => {
   const {
@@ -13,6 +16,9 @@ const CurrentlyPlaying = () => {
     playlistPosition,
     setPlaylistPosition,
   } = useGlobalState();
+
+  const [currentTime, setCurrentTime] = useState(null);
+  const [duration, setDuration] = useState(null);
 
   const audioRef = useRef();
 
@@ -30,6 +36,10 @@ const CurrentlyPlaying = () => {
     // run the effect every time the playlist position changes or the play state is toggled
   }, [playlistPosition, isPlaying]);
 
+  useEffect(() => {
+    setDuration(audioRef.current.duration);
+  }, [playlistPosition]);
+
   const onEnded = () => {
     playNext();
   };
@@ -40,6 +50,10 @@ const CurrentlyPlaying = () => {
 
   const playPrevious = () => {
     setPlaylistPosition(playlistPosition - 1);
+  };
+
+  const onTimeUpdate = (e) => {
+    setCurrentTime(e.currentTarget.currentTime);
   };
 
   const currSong = playlist?.[playlistPosition];
@@ -84,6 +98,11 @@ const CurrentlyPlaying = () => {
           <img src={SkipForwardIcon} width="24" />
         </div>
       </div>
+      {/* time and duration */}
+      <p>
+        {convertSecondsToFormattedTime(currentTime ?? 0)} /{" "}
+        {convertSecondsToFormattedTime(duration >= 0 ? duration : 0)}
+      </p>
 
       <p>{isPlaying ? "Currently Playing" : "No Song Added"}</p>
       <p>{currSong?.meta?.title}</p>
@@ -101,6 +120,7 @@ const CurrentlyPlaying = () => {
         src={currSong?.meta?.audio}
         ref={audioRef}
         onEnded={onEnded}
+        onTimeUpdate={onTimeUpdate}
       />
 
       <p>Prev songs:</p>

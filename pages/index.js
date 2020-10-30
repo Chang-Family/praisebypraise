@@ -1,5 +1,4 @@
-import Navbar from "../components/Navbar";
-import Playlist from "components/Playlist";
+import Navbar from "components/Navbar";
 import flower from "./flower.jpg";
 import cover from "./praisebypraisecover.png";
 import styled from "styled-components";
