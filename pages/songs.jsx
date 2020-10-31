@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import Navbar from "../components/Navbar";
-
+import Navbar from "components/Navbar";
 import SongList from "components/SongList";
-import NowPlaying from "components/NowPlaying";
 
 const Songs = () => {
   return (
