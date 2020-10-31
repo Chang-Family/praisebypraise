@@ -83,34 +83,36 @@ const SongList = () => {
   return (
     <div>
       {songs.map((p, i) => {
+        const date = new Date(p?.meta?.date);
+        const year = date ? date.getFullYear() + "" : "";
         return (
-          <div key={i}>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                padding: "10px",
-                borderTop: "1px solid grey",
-              }}
-            >
-              <Group style={{ display: "flex", alignItems: "center" }}>
-                <PlayPauseButton playlist={songs} playlistPosition={i} />
-                <Link href={p?.slug}>
-                  <SongTitle>
-                    {p?.meta?.title}{" "}
-                    {p?.meta?.title_cn ? `- ${p?.meta?.title_cn}` : ""}
-                  </SongTitle>
-                </Link>
-              </Group>
-              <Group style={{ display: "flex" }}>
-                {/* <details className="dropdown-animate">
+          <div
+            class={year}
+            key={i}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              padding: "10px",
+              borderTop: "1px solid #E5C69F",
+            }}
+          >
+            <Group style={{ display: "flex", alignItems: "center" }}>
+              <PlayPauseButton playlist={songs} playlistPosition={i} />
+              <Link href={p?.slug}>
+                <SongTitle>
+                  {p?.meta?.title}{" "}
+                  {p?.meta?.title_cn ? `- ${p?.meta?.title_cn}` : ""}
+                </SongTitle>
+              </Link>
+            </Group>
+            <Group style={{ display: "flex" }}>
+              {/* <details className="dropdown-animate">
                   <summary className="dropdown-animate">See Lyrics</summary>
                   <Lyrics lyrics={p.meta.lyrics_cn} />
                 </details> */}
-                <p>{p?.meta?.date}</p>
-              </Group>
-            </div>
+              <p>{p?.meta?.date}</p>
+            </Group>
           </div>
         );
       })}
