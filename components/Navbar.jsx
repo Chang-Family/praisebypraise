@@ -20,7 +20,7 @@ const Text = styled.div`
 
 const Navbar = () => {
   return (
-    <>
+    <div style={{ marginTop: "5%" }}>
       <Nav>
         <Link href="/">
           <Text title="true">Praise By Praise</Text>
@@ -43,7 +43,7 @@ const Navbar = () => {
           <Text>ABOUT</Text>
         </Link>
       </Nav>
-    </>
+    </div>
   );
 };
 

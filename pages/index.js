@@ -13,6 +13,10 @@ const Pgraph = styled.p`
   align-items: flex-start;
 `;
 
+const Space = styled.div`
+  margin-bottom: 10%;
+`;
+
 const P = styled.span`
   display: flex;
   justify-content: space-around;
@@ -21,115 +25,161 @@ const P = styled.span`
   padding-bottom: 3%;
 `;
 
+const Container2 = styled.div`
+  width: 100%;
+  position: relative;
+  color: #fff;
+  background-color: #bdc692;
+`;
+
+const Container = styled.div`
+  width: 40%;
+  position: relative;
+  color: #4a4040;
+  background-color: #bdc692;
+  border: 0px solid #bdc692;
+  border-radius: 30px;
+`;
+
+const Img = styled.img`
+  width: 100%;
+  text-align: center;
+  height: 300px;
+  object-fit: cover;
+  opacity: 80%;
+  border: 0px solid #bdc692;
+  border-radius: 30px;
+`;
+
+const Overlay = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-family: Quattrocento Sans;
+`;
+
+const Overlay2 = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 9vw;
+  font-family: Quattrocento;
+  opacity: 80%;
+`;
+
+const Overlay3 = styled.div`
+  position: absolute;
+  top: 35%;
+  left: 75%;
+  transform: translate(-75%, -35%);
+  font-size: 2vw;
+  font-family: Quattrocento;
+  opacity: 80%;
+`;
+
+const Overlay4 = styled.div`
+  position: absolute;
+  top: 65%;
+  left: 15%;
+  transform: translate(-15%, -65%);
+  font-size: 2vw;
+  font-family: Quattrocento;
+  opacity: 80%;
+  text-align: right;
+`;
+
 const Home = () => {
   return (
-    <div style={{ margin: "5%" }}>
+    <div>
       <Navbar />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+      <Container2>
         <img
-          src={cover}
+          src={flower}
           style={{
-            height: "55vh",
+            height: "60vh",
             width: "100%",
             objectFit: "cover",
+            opacity: "80%",
           }}
         />
-      </div>
-      <div>
-        <P>
-          <div>
-            ​<Pgraph>He put a new song in my mouth,</Pgraph>
-            <Pgraph>a hymn of praise to our God. </Pgraph>
-            <Pgraph>Many will see and fear </Pgraph>
-            <Pgraph>and put their trust in the Lord. </Pgraph>
-            <Pgraph>Psalm 40:3</Pgraph>
-          </div>
-          <div>
-            <Pgraph>祂使我口唱新歌,</Pgraph>
-            <Pgraph>就是讚美我們神的話.</Pgraph>
-            <Pgraph>許多人必看見而懼怕,</Pgraph>
-            <Pgraph>並要倚靠耶和華.</Pgraph>
-            <Pgraph>詩篇40:3</Pgraph>
-          </div>
-        </P>
-        <div
-          style={{
-            position: "relative",
-            color: "#4A4040",
-            backgroundColor: "#BDC692",
-            border: "40px sold #BDC692",
-            borderRadius: "30px",
-            marginLeft: "3%",
-            marginRight: "3%",
-          }}
-        >
-          <img
-            src={blossoms}
-            alt="blog"
-            style={{
-              width: "100%",
-              height: "300px",
-              objectFit: "cover",
-              opacity: "80%",
-              border: "10px sold #BDC692",
-              borderRadius: "30px",
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              fontSize: "10vw",
-              fontWeight: "bold",
-              fontFamily: "Quattrocento Sans",
-            }}
-          >
-            Songs
+        <Overlay2>
+          Praise <br />
+          &nbsp; &nbsp; &nbsp; by Praise
+        </Overlay2>
+        <Overlay3>
+          Praise by Praise, day by day. <br /> Everlasting praise to you.
+        </Overlay3>
+        <Overlay4>
+          讚美接讚美, 一天接一天, <br /> 永續讚美獻上給神.
+        </Overlay4>
+      </Container2>
+      <Space />
+      <div style={{ margin: "5%" }}>
+        <div style={{ display: "flex" }}>
+          <Container>
+            <Img src={blossoms} alt="blog" />
+            <Overlay>
+              Sing to the Lord a new song; sing to the Lord, all the earth.
+              Psalm 96:1 <br />
+              你們要向耶和華唱新歌.全地都要向耶和華歌唱. 詩篇 96:1
+            </Overlay>
+          </Container>
+          <div style={{ marginLeft: "3%" }}>
+            <h1>Featured Songs</h1>
+            <SongList limit="5" />
           </div>
         </div>
-        <br />
-        <div
-          style={{
-            position: "relative",
-            color: "#4A4040",
-            backgroundColor: "#BDC692",
-            border: "40px sold #BDC692",
-            borderRadius: "30px",
-            marginLeft: "3%",
-            marginRight: "3%",
-          }}
-        >
-          <img
-            src={blogcover}
-            alt="blog"
-            style={{
-              width: "100%",
-              height: "300px",
-              objectFit: "cover",
-              opacity: "50%",
-              border: "10px sold #BDC692",
-              borderRadius: "30px",
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              fontSize: "10vw",
-              fontWeight: "bold",
-              fontFamily: "Quattrocento Sans",
-            }}
-          >
-            Songs
+        <Space />
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <iframe
+            width="100%"
+            height="515px"
+            src="https://www.youtube.com/embed/O7t7PJUDKTE"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <Container>
+            <Img src={blogcover} alt="blog" />
+            <Overlay>
+              Speak the grace of Lord Jesus Christ We are so thankful
+              <br />
+              細訴主耶穌基督的恩典 ​我們滿心感謝
+            </Overlay>
+          </Container>
+        </div>
+        <Space />
+        <div style={{ display: "flex" }}>
+          <Container>
+            <Img src={blossoms} alt="blog" />
+            <Overlay
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                textAlign: "center",
+                transform: "translate(-50%, -50%)",
+                fontSize: "1.5vw",
+                fontWeight: "bold",
+                fontFamily: "Quattrocento Sans",
+              }}
+            >
+              Sing to the Lord a new song; sing to the Lord, all the earth.
+              Psalm 96:1 <br />
+              你們要向耶和華唱新歌.全地都要向耶和華歌唱. 詩篇 96:1
+            </Overlay>
+          </Container>
+          <div style={{ marginLeft: "3%" }}>
+            <h1>Featured Songs</h1>
+            <h3>Come Lord Jesus</h3>
+            <h3>The Lord's Prayer</h3>
+            <h3>Come Lord Jesus</h3>
+            <h3>The Lord's Prayer</h3>
           </div>
         </div>
       </div>
