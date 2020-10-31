@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import React, { useState, useEffect, useRef } from "react";
 import useGlobalState from "hooks/useGlobalState";
 
@@ -7,8 +8,6 @@ import PauseIcon from "assets/icons/pause.svg";
 import SkipForwardIcon from "assets/icons/skip-forward.svg";
 import SkipBackIcon from "assets/icons/skip-back.svg";
 
-import styled from "styled-components";
-
 const convertSecondsToFormattedTime = (seconds) =>
   new Date(seconds * 1000).toISOString().substr(14, 5);
 
@@ -17,7 +16,7 @@ const ControlButton = styled.div`
   display: flex;
   justify-content: center;
   /* give some breathing room */
-  padding: ${(props) => props.padding ?? "10px"};
+  padding: ${(props) => props.padding ?? 10};
   width: 100%;
   /* color */
   background-color: ${(props) => props.backgroundColor};
@@ -65,11 +64,17 @@ const NowPlaying = () => {
   };
 
   const playNext = () => {
-    setPlaylistPosition(playlistPosition + 1);
+    if (playlist.length > 0) {
+      setPlaylistPosition(playlistPosition + 1);
+      setIsPlaying(true);
+    }
   };
 
   const playPrevious = () => {
-    setPlaylistPosition(playlistPosition - 1);
+    if (playlist.length > 0) {
+      setPlaylistPosition(playlistPosition - 1);
+      setIsPlaying(true);
+    }
   };
 
   const onTimeUpdate = (e) => {
@@ -112,13 +117,20 @@ const NowPlaying = () => {
           <img src={PlayIcon} width="24" />
         </ControlButton>
       )}
-
       {/* next and prev buttons */}
       <div className="flex justify-between">
-        <ControlButton backgroundColor="#BDC692">
+        <ControlButton
+          backgroundColor="#BDC692"
+          onClick={playPrevious}
+          padding="10px"
+        >
           <img src={SkipBackIcon} width="24" />
         </ControlButton>
-        <ControlButton backgroundColor="#BDC692">
+        <ControlButton
+          backgroundColor="#BDC692"
+          onClick={playNext}
+          padding="10px"
+        >
           <img src={SkipForwardIcon} width="24" />
         </ControlButton>
       </div>
