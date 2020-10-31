@@ -4,10 +4,19 @@ import { getMdxContent } from "utils";
 import { useGlobalState } from "hooks/useGlobalState";
 import PlayIcon from "assets/icons/play.svg";
 import PauseIcon from "assets/icons/pause.svg";
+import Link from "next/link";
 
 const IconButton = styled.img`
   cursor: pointer;
   height: 20px;
+`;
+
+const SongTitle = styled.h3`
+  margin-left: 20px;
+  cursor: pointer;
+  &:hover {
+    color: blue;
+  }
 `;
 
 const Group = styled.div``;
@@ -87,10 +96,12 @@ const SongList = () => {
             >
               <Group style={{ display: "flex", alignItems: "center" }}>
                 <PlayPauseButton playlist={songs} playlistPosition={i} />
-                <h3 style={{ marginLeft: "20px" }}>
-                  {p?.meta?.title}{" "}
-                  {p?.meta?.title_cn ? `- ${p?.meta?.title_cn}` : ""}
-                </h3>
+                <Link href={p?.slug}>
+                  <SongTitle>
+                    {p?.meta?.title}{" "}
+                    {p?.meta?.title_cn ? `- ${p?.meta?.title_cn}` : ""}
+                  </SongTitle>
+                </Link>
               </Group>
               <Group style={{ display: "flex" }}>
                 {/* <details className="dropdown-animate">
