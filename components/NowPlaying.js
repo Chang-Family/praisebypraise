@@ -142,11 +142,14 @@ const NowPlaying = () => {
       <div
         style={{
           transform: "rotate(180deg)",
+          // transform: "scale(-1)", // another thing to try
           margin: "auto auto",
         }}
       >
         <p
           style={{
+            margin: "0",
+            lineHeight: "0",
             width: "100%",
             whiteSpace: "nowrap",
             writingMode: "vertical-lr",

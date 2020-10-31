@@ -97,7 +97,7 @@ const SongList = ({ featuredOnly = false, limit = null }) => {
         const year = date ? date.getFullYear() + "" : "";
         return (
           <div
-            class={year}
+            className={year}
             key={i}
             style={{
               display: "flex",

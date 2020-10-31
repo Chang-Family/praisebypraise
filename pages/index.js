@@ -140,9 +140,9 @@ const Home = () => {
             width="100%"
             height="515px"
             src="https://www.youtube.com/embed/O7t7PJUDKTE"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
             style={{
               marginRight: "20px",
               borderRadius: "30px",
