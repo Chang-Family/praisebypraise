@@ -142,6 +142,7 @@ const NowPlaying = () => {
       <div
         style={{
           transform: "rotate(180deg)",
+          margin: "auto auto",
         }}
       >
         <p
