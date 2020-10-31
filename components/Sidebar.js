@@ -36,7 +36,12 @@ const Sidebar = ({ children }) => {
         overflow: "hidden",
       }}
     >
-      <div style={{ visibility: width === MAX_WIDTH ? "visible" : "hidden" }}>
+      <div
+        style={{
+          visibility: width === MAX_WIDTH ? "visible" : "hidden",
+          height: "100%",
+        }}
+      >
         {children}
       </div>
     </div>

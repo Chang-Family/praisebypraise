@@ -26,6 +26,8 @@ const ControlButton = styled.div`
   }
 `;
 
+const Group = styled.div``;
+
 const NowPlaying = () => {
   const {
     isPlaying,
@@ -93,87 +95,111 @@ const NowPlaying = () => {
     <div
       style={{
         height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
       }}
     >
-      {/* play button */}
+      <Group>
+        {/* play button */}
 
-      {isPlaying ? (
-        <ControlButton
-          backgroundColor="#BD645A"
-          padding="20px"
-          onClick={playPause}
+        {isPlaying ? (
+          <ControlButton
+            backgroundColor="#BD645A"
+            padding="20px"
+            onClick={playPause}
+          >
+            <img src={PauseIcon} width="24" />
+          </ControlButton>
+        ) : (
+          <ControlButton
+            backgroundColor="#BD645A"
+            padding="20px"
+            onClick={playPause}
+          >
+            <img src={PlayIcon} width="24" />
+          </ControlButton>
+        )}
+        {/* next and prev buttons */}
+        <div className="flex justify-between">
+          <ControlButton
+            backgroundColor="#BDC692"
+            onClick={playPrevious}
+            padding="10px"
+          >
+            <img src={SkipBackIcon} width="24" />
+          </ControlButton>
+          <ControlButton
+            backgroundColor="#BDC692"
+            onClick={playNext}
+            padding="10px"
+          >
+            <img src={SkipForwardIcon} width="24" />
+          </ControlButton>
+        </div>
+      </Group>
+
+      <div
+        style={{
+          transform: "rotate(180deg)",
+        }}
+      >
+        <p
+          style={{
+            width: "100%",
+            whiteSpace: "nowrap",
+            writingMode: "vertical-lr",
+            fontSize: "2rem",
+          }}
         >
-          <img src={PauseIcon} width="24" />
-        </ControlButton>
-      ) : (
-        <ControlButton
-          backgroundColor="#BD645A"
-          padding="20px"
-          onClick={playPause}
-        >
-          <img src={PlayIcon} width="24" />
-        </ControlButton>
-      )}
-      {/* next and prev buttons */}
-      <div className="flex justify-between">
-        <ControlButton
-          backgroundColor="#BDC692"
-          onClick={playPrevious}
-          padding="10px"
-        >
-          <img src={SkipBackIcon} width="24" />
-        </ControlButton>
-        <ControlButton
-          backgroundColor="#BDC692"
-          onClick={playNext}
-          padding="10px"
-        >
-          <img src={SkipForwardIcon} width="24" />
-        </ControlButton>
+          {currSong?.meta?.title}
+        </p>
       </div>
-      {/* time and duration */}
-      <p>
-        {convertSecondsToFormattedTime(currentTime ?? 0)} /{" "}
-        {convertSecondsToFormattedTime(duration >= 0 ? duration : 0)}
-      </p>
 
-      <p>{isPlaying ? "Currently Playing" : "No Song Added"}</p>
-      <p>{currSong?.meta?.title}</p>
-      <details>
+      {/* <details>
         <summary>Lyrics</summary>
         <p
           style={{ whiteSpace: "pre-line" }}
           dangerouslySetInnerHTML={{ __html: currSong?.meta?.lyrics_cn }}
         ></p>
-      </details>
+      </details> */}
+
+      {/* <p>Prev songs:</p>
+      {playlist.slice(0, playlistPosition).map((s) => s?.meta?.title)}
+      <p>next songs:</p>
+      {playlist.slice(playlistPosition + 1).map((s) => s?.meta?.title)}
+      <br /> */}
+
+      {/* go to previous song (don't go if at the end of list ) */}
+      {/* <button onClick={playPrevious} disabled={playlistPosition === 0}>
+        play previous
+      </button> */}
+      {/* go to next song (don't go if at the end of list) */}
+      {/* <button
+        onClick={playNext}
+        disabled={playlistPosition === playlist.length - 1}
+      >
+        play next
+      </button> */}
+
+      {/* time and duration */}
+      <Group style={{ padding: "10px", textAlign: "center" }}>
+        <h2 style={{ marginBottom: 0 }}>
+          {convertSecondsToFormattedTime(currentTime ?? 0)}
+        </h2>
+        <h3 style={{ margin: 0, marginTop: 5 }}>
+          {convertSecondsToFormattedTime(duration >= 0 ? duration : 0)}
+        </h3>
+      </Group>
 
       <audio
-        style={{ visibility: "hidden" }}
+        style={{ visibility: "hidden", position: "absolute" }}
         controls
         src={currSong?.meta?.audio}
         ref={audioRef}
         onEnded={onEnded}
         onTimeUpdate={onTimeUpdate}
       />
-
-      <p>Prev songs:</p>
-      {playlist.slice(0, playlistPosition).map((s) => s?.meta?.title)}
-      <p>next songs:</p>
-      {playlist.slice(playlistPosition + 1).map((s) => s?.meta?.title)}
-      <br />
-
-      {/* go to previous song (don't go if at the end of list ) */}
-      <button onClick={playPrevious} disabled={playlistPosition === 0}>
-        play previous
-      </button>
-
-      {/* go to next song (don't go if at the end of list) */}
-      <button
-        onClick={playNext}
-        disabled={playlistPosition === playlist.length - 1}
-      >
-        play next
-      </button>
     </div>
   );
 };
