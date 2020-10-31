@@ -152,7 +152,7 @@ const NowPlaying = () => {
             fontSize: "2rem",
           }}
         >
-          {currSong?.meta?.title}
+          {currSong?.meta?.title ?? "No song playing"}
         </p>
       </div>
 
