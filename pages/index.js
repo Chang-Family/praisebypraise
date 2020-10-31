@@ -3,6 +3,9 @@ import flower from "./flower.jpg";
 import cover from "./praisebypraisecover.png";
 import styled from "styled-components";
 import SongList from "components/SongList";
+import redflower from "./Red-Flowers.jpg";
+import blogcover from "./blog_cover.jpg";
+import blossoms from "./Blossoms2.jpg";
 
 const Pgraph = styled.p`
   display: flex;
@@ -54,8 +57,81 @@ const Home = () => {
             <Pgraph>詩篇40:3</Pgraph>
           </div>
         </P>
-
-        <SongList />
+        <div
+          style={{
+            position: "relative",
+            color: "#4A4040",
+            backgroundColor: "#BDC692",
+            border: "40px sold #BDC692",
+            borderRadius: "30px",
+            marginLeft: "3%",
+            marginRight: "3%",
+          }}
+        >
+          <img
+            src={blossoms}
+            alt="blog"
+            style={{
+              width: "100%",
+              height: "300px",
+              objectFit: "cover",
+              opacity: "80%",
+              border: "10px sold #BDC692",
+              borderRadius: "30px",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              fontSize: "10vw",
+              fontWeight: "bold",
+              fontFamily: "Quattrocento Sans",
+            }}
+          >
+            Songs
+          </div>
+        </div>
+        <br />
+        <div
+          style={{
+            position: "relative",
+            color: "#4A4040",
+            backgroundColor: "#BDC692",
+            border: "40px sold #BDC692",
+            borderRadius: "30px",
+            marginLeft: "3%",
+            marginRight: "3%",
+          }}
+        >
+          <img
+            src={blogcover}
+            alt="blog"
+            style={{
+              width: "100%",
+              height: "300px",
+              objectFit: "cover",
+              opacity: "50%",
+              border: "10px sold #BDC692",
+              borderRadius: "30px",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              fontSize: "10vw",
+              fontWeight: "bold",
+              fontFamily: "Quattrocento Sans",
+            }}
+          >
+            Songs
+          </div>
+        </div>
       </div>
     </div>
   );
