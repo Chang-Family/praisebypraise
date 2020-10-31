@@ -11,7 +11,7 @@ const MyApp = ({ Component, pageProps }) => {
         <Sidebar>
           <NowPlaying />
         </Sidebar>
-        <div style={{ height: "100%", width: "100%" }}>
+        <div style={{ height: "100%", width: "100%", overflow: "scroll" }}>
           <Component {...pageProps} />
         </div>
       </div>

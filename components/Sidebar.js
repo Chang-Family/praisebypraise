@@ -29,9 +29,7 @@ const Sidebar = ({ children }) => {
         maxWidth: `${width}px`,
 
         // make it sticky
-        height: "100vh",
-        position: "sticky",
-        top: "0",
+        height: "100%",
 
         // color
         backgroundColor: "#E5C69F",
