@@ -21,7 +21,7 @@ const SongTitle = styled.h3`
 
 const Group = styled.div``;
 
-const SongList = () => {
+const SongList = ({ featuredOnly = false, limit = null }) => {
   const mdxContent = getMdxContent();
   const {
     isPlaying,
@@ -33,7 +33,17 @@ const SongList = () => {
   } = useGlobalState();
 
   // only display posts with audio in their meta tag
-  const songs = mdxContent.filter((c) => c?.meta?.audio);
+  let songs = mdxContent.filter((c) => c?.meta?.audio);
+
+  // if featured is set
+  if (featuredOnly) {
+    songs = songs.filter((c) => c?.meta?.featured);
+  }
+
+  // if limit is set
+  if (limit) {
+    songs = songs.slice(0, limit);
+  }
 
   songs.sort((a, b) => {
     const aDate = new Date(a?.meta?.date);
