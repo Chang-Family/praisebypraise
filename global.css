@@ -104,3 +104,11 @@ you can use to provide global customizations */
 .width-animate {
   transition: width, max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+.dropdown-animate {
+  transition: all 0.1 ease-in-out;
+}
+
+.dropdown-animate > * {
+  transition: all 0.1 ease-in-out;
+}

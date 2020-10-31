@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import Lyrics from "components/Lyrics";
 import { getMdxContent } from "utils";
 import { useGlobalState } from "hooks/useGlobalState";
+import PlayIcon from "assets/icons/play.svg";
+import PauseIcon from "assets/icons/pause.svg";
 
-const GridContainer = styled.div`
-  display: grid;
-  grid-template-columns: 40% 15% 15% 50%;
-  align-items: center;
+const IconButton = styled.img`
+  cursor: pointer;
+  height: 20px;
 `;
+
+const Group = styled.div``;
 
 const SongList = () => {
   const mdxContent = getMdxContent();
@@ -23,6 +25,12 @@ const SongList = () => {
 
   // only display posts with audio in their meta tag
   const songs = mdxContent.filter((c) => c?.meta?.audio);
+
+  songs.sort((a, b) => {
+    const aDate = new Date(a?.meta?.date);
+    const bDate = new Date(b?.meta?.date);
+    return bDate - aDate;
+  });
 
   const playSong = (event, playlist, playlistPosition) => {
     setPlaylist(playlist);
@@ -44,30 +52,22 @@ const SongList = () => {
     ) {
       // either it's playing, in which case we need a button to pause it
       if (isPlaying) {
-        return (
-          <button onClick={pauseSong} style={{ width: "80px" }}>
-            Pause
-          </button>
-        );
+        return <IconButton src={PauseIcon} onClick={pauseSong} />;
       }
       // or it's paused, in which case we need to play it
       return (
-        <button
+        <IconButton
+          src={PlayIcon}
           onClick={(e) => playSong(e, playlist, playlistPosition)}
-          style={{ width: "80px" }}
-        >
-          Play
-        </button>
+        />
       );
     }
     // play song if not current song
     return (
-      <button
+      <IconButton
+        src={PlayIcon}
         onClick={(e) => playSong(e, playlist, playlistPosition)}
-        style={{ width: "80px" }}
-      >
-        Play
-      </button>
+      />
     );
   };
 
@@ -76,17 +76,30 @@ const SongList = () => {
       {songs.map((p, i) => {
         return (
           <div key={i}>
-            <hr />
-            <GridContainer key={p?.slug}>
-              <h3>{p?.meta?.title}</h3>
-              <details>
-                <summary>See Lyrics</summary>
-                <Lyrics lyrics={p.meta.lyrics_cn} />
-              </details>
-              <a href={p?.slug}>See page</a>
-              <PlayPauseButton playlist={songs} playlistPosition={i} />
-              {/* <audio controls src={p?.meta?.audio} onEnded={onAudioEnded} /> */}
-            </GridContainer>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                padding: "10px",
+                borderTop: "1px solid grey",
+              }}
+            >
+              <Group style={{ display: "flex", alignItems: "center" }}>
+                <PlayPauseButton playlist={songs} playlistPosition={i} />
+                <h3 style={{ marginLeft: "20px" }}>
+                  {p?.meta?.title}{" "}
+                  {p?.meta?.title_cn ? `- ${p?.meta?.title_cn}` : ""}
+                </h3>
+              </Group>
+              <Group style={{ display: "flex" }}>
+                {/* <details className="dropdown-animate">
+                  <summary className="dropdown-animate">See Lyrics</summary>
+                  <Lyrics lyrics={p.meta.lyrics_cn} />
+                </details> */}
+                <p>{p?.meta?.date}</p>
+              </Group>
+            </div>
           </div>
         );
       })}
