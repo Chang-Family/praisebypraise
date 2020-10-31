@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import useGlobalState from "hooks/useGlobalState";
 
+// icons
 import PlayIcon from "assets/icons/play.svg";
+import PauseIcon from "assets/icons/pause.svg";
 import SkipForwardIcon from "assets/icons/skip-forward.svg";
 import SkipBackIcon from "assets/icons/skip-back.svg";
+
 import styled from "styled-components";
 
 const convertSecondsToFormattedTime = (seconds) =>
@@ -18,11 +21,16 @@ const ControlButton = styled.div`
   width: 100%;
   /* color */
   background-color: ${(props) => props.backgroundColor};
+  &:hover {
+    cursor: pointer;
+    filter: brightness(1.05);
+  }
 `;
 
 const NowPlaying = () => {
   const {
     isPlaying,
+    setIsPlaying,
     playlist,
     setPlaylist,
     playlistPosition,
@@ -68,18 +76,43 @@ const NowPlaying = () => {
     setCurrentTime(e.currentTarget.currentTime);
   };
 
+  const playPause = () => {
+    if (playlist.length > 0) {
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   const currSong = playlist?.[playlistPosition];
 
   return (
     <div
       style={{
         height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
       }}
     >
       {/* play button */}
-      <ControlButton backgroundColor="#BD645A" padding="20px">
-        <img src={PlayIcon} width="24" />
-      </ControlButton>
+
+      {isPlaying ? (
+        <ControlButton
+          backgroundColor="#BD645A"
+          padding="20px"
+          onClick={playPause}
+        >
+          <img src={PauseIcon} width="24" />
+        </ControlButton>
+      ) : (
+        <ControlButton
+          backgroundColor="#BD645A"
+          padding="20px"
+          onClick={playPause}
+        >
+          <img src={PlayIcon} width="24" />
+        </ControlButton>
+      )}
+
       {/* next and prev buttons */}
       <div className="flex justify-between">
         <ControlButton backgroundColor="#BDC692">
