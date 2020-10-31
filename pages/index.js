@@ -129,7 +129,7 @@ const Home = () => {
               你們要向耶和華唱新歌.全地都要向耶和華歌唱. 詩篇 96:1
             </Overlay>
           </Container>
-          <div style={{ marginLeft: "3%" }}>
+          <div style={{ marginLeft: "3%", width: "70%" }}>
             <h1>Featured Songs</h1>
             <SongList limit="5" />
           </div>
@@ -143,6 +143,10 @@ const Home = () => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            style={{
+              marginRight: "20px",
+              borderRadius: "30px",
+            }}
           ></iframe>
           <Container>
             <Img src={blogcover} alt="blog" />
