@@ -1,4 +1,5 @@
 import Navbar from "components/Navbar";
+import Footer from "components/Footer";
 import flower from "./flower.jpg";
 import cover from "./praisebypraisecover.png";
 import styled from "styled-components";
@@ -35,7 +36,7 @@ const Container2 = styled.div`
 const Container = styled.div`
   width: 40%;
   position: relative;
-  color: #4a4040;
+  color: white;
   background-color: #bdc692;
   border: 0px solid #bdc692;
   border-radius: 30px;
@@ -43,8 +44,8 @@ const Container = styled.div`
 
 const Img = styled.img`
   width: 100%;
+  height: 100%;
   text-align: center;
-  height: 300px;
   object-fit: cover;
   opacity: 80%;
   border: 0px solid #bdc692;
@@ -57,9 +58,11 @@ const Overlay = styled.div`
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   font-weight: bold;
-  font-family: Quattrocento Sans;
+  font-family: Quattrocento;
+  line-height: 1.5em;
+  opacity: 90%;
 `;
 
 const Overlay2 = styled.div`
@@ -125,11 +128,16 @@ const Home = () => {
             <Img src={blossoms} alt="blog" />
             <Overlay>
               Sing to the Lord a new song; sing to the Lord, all the earth.
+              <br />
               Psalm 96:1 <br />
-              你們要向耶和華唱新歌.全地都要向耶和華歌唱. 詩篇 96:1
+              <br />
+              你們要向耶和華唱新歌.
+              <br />
+              全地都要向耶和華歌唱. <br />
+              詩篇 96:1
             </Overlay>
           </Container>
-          <div style={{ marginLeft: "3%", width: "70%" }}>
+          <div style={{ marginLeft: "3%", width: "80%" }}>
             <h1>Featured Songs</h1>
             <SongList limit="5" />
           </div>
@@ -137,7 +145,7 @@ const Home = () => {
         <Space />
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <iframe
-            width="100%"
+            width="90%"
             height="515px"
             src="https://www.youtube.com/embed/O7t7PJUDKTE"
             frameBorder="0"
@@ -149,11 +157,13 @@ const Home = () => {
             }}
           ></iframe>
           <Container>
-            <Img src={blogcover} alt="blog" />
+            <Img src={redflower} alt="blog" />
             <Overlay>
-              Speak the grace of Lord Jesus Christ We are so thankful
+              Speak the grace of Lord Jesus Christ <br />
+              We are so thankful
               <br />
-              細訴主耶穌基督的恩典 ​我們滿心感謝
+              <br />
+              細訴主耶穌基督的恩典 ​ 我們滿心感謝
             </Overlay>
           </Container>
         </div>
@@ -179,7 +189,7 @@ const Home = () => {
             </Overlay>
           </Container>
           <div style={{ marginLeft: "3%" }}>
-            <h1>Featured Songs</h1>
+            <h1>Featured Blog</h1>
             <h3>Come Lord Jesus</h3>
             <h3>The Lord's Prayer</h3>
             <h3>Come Lord Jesus</h3>
@@ -187,6 +197,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

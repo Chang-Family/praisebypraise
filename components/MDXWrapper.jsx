@@ -18,7 +18,7 @@ const MDXWrapper = ({ children, meta }) => {
         {/* header */}
         <Navbar />
         {/* content */}
-        <div style={{ padding: "50px" }}>
+        <div style={{ padding: "5%" }}>
           {/* meta */}
           <h1>{meta?.title}</h1>
           <p>

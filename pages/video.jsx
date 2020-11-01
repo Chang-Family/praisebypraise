@@ -1,5 +1,6 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "components/Navbar";
+import Footer from "components/Footer";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -82,6 +83,7 @@ const Video = () => {
           allowfullscreen
         ></iframe>
       </Container>
+      <Footer />
     </>
   );
 };

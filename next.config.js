@@ -11,7 +11,7 @@ const withMDX = require("@next/mdx")({
 module.exports = withImages(
   withMDX({
     // this is for withImages
-    fileExtensions: ["jpg", "jpeg", "png", "gif", "mp3", "svg"],
+    fileExtensions: ["jpg", "jpeg", "png", "gif", "mp3", "mp4", "svg"],
     // this is for withMDX
     pageExtensions: ["js", "jsx", "mdx"],
   })
