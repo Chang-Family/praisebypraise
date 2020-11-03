@@ -26,7 +26,7 @@ const Vid = styled.iframe`
 
 const Video = () => {
   return (
-    <>
+    <div style={{ margin: "5%" }}>
       <Navbar />
       <Container>
         <iframe
@@ -84,7 +84,7 @@ const Video = () => {
         ></iframe>
       </Container>
       <Footer />
-    </>
+    </div>
   );
 };
 
