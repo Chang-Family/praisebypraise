@@ -1,9 +1,11 @@
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
+import { getMdxContent } from "utils";
 import flower from "./flower.jpg";
 import cover from "./praisebypraisecover.png";
 import styled from "styled-components";
 import SongList from "components/SongList";
+import BlogList from "components/BlogList";
 import redflower from "./Red-Flowers.jpg";
 import blogcover from "./blog_cover.jpg";
 import blossoms from "./Blossoms2.jpg";
@@ -188,12 +190,9 @@ const Home = () => {
               你們要向耶和華唱新歌.全地都要向耶和華歌唱. 詩篇 96:1
             </Overlay>
           </Container>
-          <div style={{ marginLeft: "3%" }}>
+          <div style={{ marginLeft: "3%", width: "80%" }}>
             <h1>Featured Blog</h1>
-            <h3>Come Lord Jesus</h3>
-            <h3>The Lord's Prayer</h3>
-            <h3>Come Lord Jesus</h3>
-            <h3>The Lord's Prayer</h3>
+            <BlogList />
           </div>
         </div>
       </div>
