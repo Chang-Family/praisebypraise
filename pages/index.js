@@ -10,22 +10,8 @@ import redflower from "./Red-Flowers.jpg";
 import blogcover from "./blog_cover.jpg";
 import blossoms from "./Blossoms2.jpg";
 
-const Pgraph = styled.p`
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-`;
-
 const Space = styled.div`
   margin-bottom: 10%;
-`;
-
-const P = styled.span`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
 `;
 
 const Container2 = styled.div`
@@ -172,7 +158,7 @@ const Home = () => {
         <Space />
         <div style={{ display: "flex" }}>
           <Container>
-            <Img src={blossoms} alt="blog" />
+            <Img src={blogcover} alt="blog" />
             <Overlay
               style={{
                 position: "absolute",
@@ -192,7 +178,7 @@ const Home = () => {
           </Container>
           <div style={{ marginLeft: "3%", width: "80%" }}>
             <h1>Featured Blog</h1>
-            <BlogList />
+            <BlogList featuredOnly />
           </div>
         </div>
       </div>
