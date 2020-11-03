@@ -79,6 +79,62 @@ you can use to provide global customizations */
   }
 }
 
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "zero zero zero zero"
+    "one two three four";
+}
+
+@media only screen and (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "zero"
+      "one"
+      "two"
+      "three"
+      "four";
+  }
+
+  .zero,
+  .one,
+  .two,
+  .three,
+  .four {
+    height: 500px !important;
+  }
+}
+
+.zero {
+  grid-area: zero;
+  height: 500px;
+}
+
+.one {
+  grid-area: one;
+  height: 200px;
+}
+
+.two {
+  grid-area: two;
+  height: 200px;
+}
+
+.three {
+  grid-area: three;
+  height: 200px;
+}
+
+.four {
+  grid-area: four;
+  height: 200px;
+}
+
 /* UTILITY CLASSES */
 
 .flex {

@@ -28,61 +28,58 @@ const Video = () => {
   return (
     <div style={{ margin: "5%" }}>
       <Navbar />
-      <Container>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/O7t7PJUDKTE"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <br />
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/1l6rTIxmo3E"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <br />
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Enu9UZg1u4Q"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <br />
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/bK-kiBdAoNo"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <br />
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/sSXs0vgeVp4"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <br />
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/sSXs0vgeVp4"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </Container>
+      <div className="video-grid">
+        <div className="zero">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/O7t7PJUDKTE"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="one">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/1l6rTIxmo3E"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="two">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/Enu9UZg1u4Q"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="three">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/bK-kiBdAoNo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="four">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/sSXs0vgeVp4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
       <Footer />
     </div>
   );
