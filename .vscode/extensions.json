@@ -1,7 +1,8 @@
 {
   "recommendations": [
-    "silvenon.mdx",
+    "unifiedjs.vscode-mdx",
     "esbenp.prettier-vscode",
-    "coenraads.bracket-pair-colorizer"
+    "coenraads.bracket-pair-colorizer",
+    "styled-components.vscode-styled-components"
   ]
 }
