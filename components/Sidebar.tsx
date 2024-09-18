@@ -1,0 +1,51 @@
+import useGlobalState from "hooks/useGlobalState";
+import { useEffect, useState } from "react";
+
+const Sidebar = ({ children }) => {
+  const MIN_WIDTH = 10;
+  const MAX_WIDTH = 100;
+
+  const { isPlaying } = useGlobalState();
+  const [width, setWidth] = useState(MIN_WIDTH);
+
+  useEffect(() => {
+    if (isPlaying) {
+      setWidth(MAX_WIDTH);
+    }
+  }, [isPlaying]);
+
+  const adjustWidth = (width: number) => {
+    setWidth(width);
+  };
+
+  return (
+    <div
+      onMouseEnter={(e) => adjustWidth(MAX_WIDTH)}
+      onMouseLeave={(e) => adjustWidth(MIN_WIDTH)}
+      className="width-animate"
+      style={{
+        // the width
+        width: "100%",
+        maxWidth: `${width}px`,
+
+        // make it sticky
+        height: "100%",
+
+        // color
+        backgroundColor: "#E5C69F",
+        overflow: "hidden",
+      }}
+    >
+      <div
+        style={{
+          visibility: width === MAX_WIDTH ? "visible" : "hidden",
+          height: "100%",
+        }}
+      >
+        {children}
+      </div>
+    </div>
+  );
+};
+
+export default Sidebar;
